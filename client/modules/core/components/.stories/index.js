@@ -10,3 +10,5 @@ import pollChart from './poll_chart';
 import pollButtons from './poll_buttons';
 import pollButton from './poll_button';
 import newOptionButton from './new_option_button';
+import mainLayout from './main_layout';
+import home from './home';
