@@ -1,0 +1,17 @@
+exports[`default view`] = `
+<div>
+  PollScreen
+  <div>
+    PollChart
+  </div>
+  <div>
+    PollButtons
+    <div>
+      PollButton
+    </div>
+    <div>
+      NewOptionButton
+    </div>
+  </div>
+</div>
+`;
