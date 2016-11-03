@@ -1,5 +1,10 @@
 exports[`default view`] = `
-<div>
+<div
+  style={
+    Object {
+      "paddingTop": 48
+    }
+  }>
   PollScreen
   <div>
     PollChart

@@ -1,11 +1,155 @@
 exports[`default view`] = `
 <div>
-  <div>
-    Header
+  <div
+    className="Fixed"
+    style={
+      Object {
+        "bottom": null,
+        "boxSizing": "border-box",
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+        "zIndex": 1
+      }
+    }>
+    <div
+      className="Toolbar"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#08e",
+          "boxSizing": "border-box",
+          "color": "#fff",
+          "display": "flex",
+          "minHeight": 48,
+          "paddingLeft": 8,
+          "paddingRight": 8
+        }
+      }>
+      <a
+        className="NavItem"
+        href="/"
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "boxSizing": "border-box",
+            "color": "inherit",
+            "cursor": "pointer",
+            "display": "flex",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "1rem",
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+            "textDecoration": "none"
+          }
+        }>
+        Home
+      </a>
+      <div
+        className="Space"
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "flex": "1 1 auto",
+            "width": 8
+          }
+        } />
+      <a
+        className="NavItem"
+        href="/polls"
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "boxSizing": "border-box",
+            "color": "inherit",
+            "cursor": "pointer",
+            "display": "flex",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "1rem",
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+            "textDecoration": "none"
+          }
+        }>
+        Polls
+      </a>
+      <a
+        className="NavItem"
+        href="/polls/new"
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "boxSizing": "border-box",
+            "color": "inherit",
+            "cursor": "pointer",
+            "display": "flex",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "1rem",
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+            "textDecoration": "none"
+          }
+        }>
+        New Poll
+      </a>
+      <a
+        className="NavItem"
+        href="/polls/1"
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "boxSizing": "border-box",
+            "color": "inherit",
+            "cursor": "pointer",
+            "display": "flex",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "1rem",
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+            "textDecoration": "none"
+          }
+        }>
+        First Poll
+      </a>
+    </div>
   </div>
   <div />
-  <div>
-    Footer
-  </div>
+  <footer
+    className="Footer"
+    style={
+      Object {
+        "alignItems": "center",
+        "borderTopColor": "rgba(0, 0, 0, .25)",
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "boxSizing": "border-box",
+        "display": "flex",
+        "flexWrap": "wrap",
+        "fontSize": 14,
+        "marginTop": 32,
+        "paddingBottom": 32,
+        "paddingTop": 32
+      }
+    }>
+    ©2016 Todd Hancock
+  </footer>
 </div>
 `;

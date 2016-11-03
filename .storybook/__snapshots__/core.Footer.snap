@@ -1,5 +1,21 @@
 exports[`default view`] = `
-<div>
-  Footer
-</div>
+<footer
+  className="Footer"
+  style={
+    Object {
+      "alignItems": "center",
+      "borderTopColor": "rgba(0, 0, 0, .25)",
+      "borderTopStyle": "solid",
+      "borderTopWidth": 1,
+      "boxSizing": "border-box",
+      "display": "flex",
+      "flexWrap": "wrap",
+      "fontSize": 14,
+      "marginTop": 32,
+      "paddingBottom": 32,
+      "paddingTop": 32
+    }
+  }>
+  ©2016 Todd Hancock
+</footer>
 `;
