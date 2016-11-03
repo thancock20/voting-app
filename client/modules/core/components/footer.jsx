@@ -1,9 +1,10 @@
 import React, { PropTypes } from 'react';
+import {Footer as Refooter} from 'rebass';
 
 const Footer = () => (
-  <div>
-    Footer
-  </div>
+  <Refooter>
+    ©2016 Todd Hancock
+  </Refooter>
 );
 Footer.propTypes = {};
 
