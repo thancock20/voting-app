@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const NewPollForm = () => (
-  <div>
+  <div style={{paddingTop: 48}}>
     NewPollForm
   </div>
 );

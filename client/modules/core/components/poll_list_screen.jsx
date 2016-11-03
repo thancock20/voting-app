@@ -3,7 +3,7 @@ import PollList from './poll_list.jsx';
 import NewPollButton from './new_poll_button.jsx';
 
 const PollListScreen = () => (
-  <div>
+  <div style={{paddingTop: 48}}>
     PollListScreen
     <PollList />
     <NewPollButton />

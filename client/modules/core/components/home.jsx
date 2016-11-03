@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 const Home = () => (
   <div>
     <Helmet title="Home" />
-    <h1>Shingon</h1>
+    <h1 style={{paddingTop: 48}}>Shingon</h1>
     <p>
       Welcome to Shingon.
     </p>
