@@ -5,6 +5,11 @@ import Poll from '../poll';
 
 describe('core.components.poll', () => {
   it('should render without exploding', () => {
-    expect(shallow(<Poll />).length).to.equal(1);
+    const poll = {
+      _id: 'abc123',
+      question: 'Ice Cream Flavors',
+      isOwner: () => true
+    };
+    expect(shallow(<Poll poll={poll} deletePoll={() => {}} />).length).to.equal(1);
   });
 });
