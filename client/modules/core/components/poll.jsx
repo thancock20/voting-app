@@ -24,7 +24,8 @@ const Poll = ({poll, deletePoll}) => (
   </li>
 );
 Poll.propTypes = {
-  poll: PropTypes.object
+  poll: PropTypes.object,
+  deletePoll: PropTypes.func
 };
 
 const styles = {
