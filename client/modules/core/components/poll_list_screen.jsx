@@ -1,10 +1,9 @@
 import React, { PropTypes } from 'react';
-import PollList from './poll_list.jsx';
+import PollList from '../containers/poll_list.js';
 import NewPollButton from './new_poll_button.jsx';
 
 const PollListScreen = () => (
   <div style={{paddingTop: 48}}>
-    PollListScreen
     <PollList />
     <NewPollButton />
   </div>
