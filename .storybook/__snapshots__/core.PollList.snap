@@ -1,8 +1,63 @@
 exports[`default view`] = `
-<div>
-  PollList
-  <div>
-    Poll
-  </div>
-</div>
+<ul>
+  <li
+    className="list-1815189512">
+    <a
+      className="link-2486703753"
+      href="/polls/1">
+      The Best Captain
+    </a>
+    <button
+      className="ButtonCircle"
+      href={undefined}
+      onClick={[Function anonymous]}
+      style={
+        Object {
+          "backgroundColor": "#f52",
+          "border": 0,
+          "borderRadius": 99999,
+          "boxSizing": "border-box",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "float": "right",
+          "fontFamily": "inherit",
+          "fontSize": "inherit",
+          "fontWeight": 600,
+          "height": 32,
+          "lineHeight": "16px",
+          "margin": 0,
+          "minHeight": 32,
+          "padding": 0,
+          "paddingBottom": 8,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 8,
+          "textDecoration": "none",
+          "width": 32
+        }
+      }
+      title="Delete">
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center"
+          }
+        }>
+        ×
+      </div>
+    </button>
+  </li>
+  <li
+    className="list-1815189512">
+    <a
+      className="link-2486703753"
+      href="/polls/2">
+      Ice Cream Flavor
+    </a>
+  </li>
+</ul>
 `;
