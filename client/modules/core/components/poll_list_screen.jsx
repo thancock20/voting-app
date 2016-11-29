@@ -1,13 +1,21 @@
 import React, { PropTypes } from 'react';
 import PollList from '../containers/poll_list.js';
-import NewPollButton from './new_poll_button.jsx';
+import { Button } from 'rebass';
 
-const PollListScreen = () => (
+const PollListScreen = ({newPoll}) => (
   <div style={{paddingTop: 48}}>
     <PollList />
-    <NewPollButton />
+    <Button
+      pill={true}
+      theme='primary'
+      onClick={newPoll}
+    >
+      New Poll
+    </Button>
   </div>
 );
-PollListScreen.propTypes = {};
+PollListScreen.propTypes = {
+  newPoll: PropTypes.func
+};
 
 export default PollListScreen;

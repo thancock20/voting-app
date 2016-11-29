@@ -5,6 +5,6 @@ import PollListScreen from '../poll_list_screen';
 
 describe('core.components.poll_list_screen', () => {
   it('should render without exploding', () => {
-    expect(shallow(<PollListScreen />).length).to.equal(1);
+    expect(shallow(<PollListScreen newPoll={() => {}} />).length).to.equal(1);
   });
 });

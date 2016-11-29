@@ -29,6 +29,8 @@ storiesOf('core.PollListScreen', module)
   .addDecorator(withKnobs)
   .add('default view', () => {
     return (
-      <PollListScreen />
+      <PollListScreen
+        newPoll={action('poll-list-screen-new-poll-clicked')}
+      />
     );
   });

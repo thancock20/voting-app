@@ -3,7 +3,6 @@
 * PollListScreen
   * PollList
     * Poll
-  * NewPollButton
 * Footer
 
 # /polls/:id
