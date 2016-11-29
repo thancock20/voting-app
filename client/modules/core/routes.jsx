@@ -3,7 +3,7 @@ import {mount} from 'react-mounter';
 
 import MainLayout from './components/main_layout.jsx';
 import Home from './components/home.jsx';
-import PollListScreen from './components/poll_list_screen.jsx';
+import PollListScreen from './containers/poll_list_screen.js';
 import PollScreen from './components/poll_screen.jsx';
 import NewPollForm from './components/new_poll_form.jsx';
 
