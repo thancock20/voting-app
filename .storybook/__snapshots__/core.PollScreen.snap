@@ -2,7 +2,8 @@ exports[`default view`] = `
 <div
   style={
     Object {
-      "paddingTop": 48
+      "paddingTop": 48,
+      "textAlign": "center"
     }
   }>
   <h1
@@ -14,8 +15,7 @@ exports[`default view`] = `
         "fontWeight": 600,
         "lineHeight": 1.25,
         "margin": 0,
-        "opacity": null,
-        "textAlign": "center"
+        "opacity": null
       }
     }>
     Ice Cream Flavors
@@ -101,8 +101,122 @@ exports[`default view`] = `
     <g />
   </svg>
   <div>
-    <div>
-      PollButton
+    <div
+      style={
+        Object {
+          "marginBottom": 5
+        }
+      }>
+      <button
+        className="Button"
+        href={undefined}
+        onClick={[Function anonymous]}
+        style={
+          Object {
+            "backgroundColor": "#4477aa",
+            "border": 0,
+            "borderRadius": 2,
+            "boxSizing": "border-box",
+            "color": "#fff",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "inherit",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16px",
+            "margin": 0,
+            "minHeight": 32,
+            "paddingBottom": 8,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 8,
+            "textDecoration": "none",
+            "width": "80%"
+          }
+        }>
+        Chocolate
+        : 
+        10
+         votes
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": 5
+        }
+      }>
+      <button
+        className="Button"
+        href={undefined}
+        onClick={[Function anonymous]}
+        style={
+          Object {
+            "backgroundColor": "#ddcc77",
+            "border": 0,
+            "borderRadius": 2,
+            "boxSizing": "border-box",
+            "color": "#fff",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "inherit",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16px",
+            "margin": 0,
+            "minHeight": 32,
+            "paddingBottom": 8,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 8,
+            "textDecoration": "none",
+            "width": "80%"
+          }
+        }>
+        Vanilla
+        : 
+        5
+         votes
+      </button>
+    </div>
+    <div
+      style={
+        Object {
+          "marginBottom": 5
+        }
+      }>
+      <button
+        className="Button"
+        href={undefined}
+        onClick={[Function anonymous]}
+        style={
+          Object {
+            "backgroundColor": "#cc6677",
+            "border": 0,
+            "borderRadius": 2,
+            "boxSizing": "border-box",
+            "color": "#fff",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "inherit",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "lineHeight": "16px",
+            "margin": 0,
+            "minHeight": 32,
+            "paddingBottom": 8,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 8,
+            "textDecoration": "none",
+            "width": "80%"
+          }
+        }>
+        Rocky Road
+        : 
+        20
+         votes
+      </button>
     </div>
     <div>
       NewOptionButton

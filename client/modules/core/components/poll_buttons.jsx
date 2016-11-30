@@ -9,10 +9,11 @@ const PollButtons = ({poll, colorScale, vote}) => (
       poll.options.map((option, index) => (
         <div key={index} style={{marginBottom: 5}}>
           <Button
+            style={{width: '80%'}}
             backgroundColor={`#${colorScale[index]}`}
             onClick={partial(vote, poll._id, option.name)}
           >
-            {option.name}
+            {option.name}: {option.votes} votes
           </Button>
         </div>
       ))

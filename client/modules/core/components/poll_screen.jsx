@@ -1,16 +1,15 @@
 import React, { PropTypes } from 'react';
 import PollChart from './poll_chart.jsx';
-import PollButtons from './poll_buttons.jsx';
+import PollButtons from '../containers/poll_buttons.js';
 import palette from '../libs/palette';
 import { Heading } from 'rebass';
 
 const PollScreen = ({poll}) => {
   const colorScale = palette([ 'tol', 'tol-rainbow' ], poll.options.length);
   return (
-    <div style={{paddingTop: 48}}>
+    <div style={{paddingTop: 48, textAlign: 'center'}}>
       <Heading
         level={1}
-        style={{textAlign: 'center'}}
       >
         {poll.question}
       </Heading>

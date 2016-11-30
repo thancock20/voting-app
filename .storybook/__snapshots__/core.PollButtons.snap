@@ -29,10 +29,14 @@ exports[`default view`] = `
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 8,
-          "textDecoration": "none"
+          "textDecoration": "none",
+          "width": "80%"
         }
       }>
       Chocolate
+      : 
+      10
+       votes
     </button>
   </div>
   <div
@@ -64,10 +68,14 @@ exports[`default view`] = `
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 8,
-          "textDecoration": "none"
+          "textDecoration": "none",
+          "width": "80%"
         }
       }>
       Vanilla
+      : 
+      5
+       votes
     </button>
   </div>
   <div
@@ -99,10 +107,14 @@ exports[`default view`] = `
           "paddingLeft": 16,
           "paddingRight": 16,
           "paddingTop": 8,
-          "textDecoration": "none"
+          "textDecoration": "none",
+          "width": "80%"
         }
       }>
       Rocky Road
+      : 
+      20
+       votes
     </button>
   </div>
   <div>
