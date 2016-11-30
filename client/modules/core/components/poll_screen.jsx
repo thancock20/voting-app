@@ -24,6 +24,8 @@ const PollScreen = ({poll}) => {
     </div>
   );
 };
-PollScreen.propTypes = {};
+PollScreen.propTypes = {
+  poll: PropTypes.object
+};
 
 export default PollScreen;
