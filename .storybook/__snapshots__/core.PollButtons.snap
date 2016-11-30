@@ -1,8 +1,109 @@
 exports[`default view`] = `
 <div>
-  PollButtons
-  <div>
-    PollButton
+  <div
+    style={
+      Object {
+        "marginBottom": 5
+      }
+    }>
+    <button
+      className="Button"
+      href={undefined}
+      onClick={[Function anonymous]}
+      style={
+        Object {
+          "backgroundColor": "#4477aa",
+          "border": 0,
+          "borderRadius": 2,
+          "boxSizing": "border-box",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "fontFamily": "inherit",
+          "fontSize": 14,
+          "fontWeight": 600,
+          "lineHeight": "16px",
+          "margin": 0,
+          "minHeight": 32,
+          "paddingBottom": 8,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 8,
+          "textDecoration": "none"
+        }
+      }>
+      Chocolate
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "marginBottom": 5
+      }
+    }>
+    <button
+      className="Button"
+      href={undefined}
+      onClick={[Function anonymous]}
+      style={
+        Object {
+          "backgroundColor": "#ddcc77",
+          "border": 0,
+          "borderRadius": 2,
+          "boxSizing": "border-box",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "fontFamily": "inherit",
+          "fontSize": 14,
+          "fontWeight": 600,
+          "lineHeight": "16px",
+          "margin": 0,
+          "minHeight": 32,
+          "paddingBottom": 8,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 8,
+          "textDecoration": "none"
+        }
+      }>
+      Vanilla
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "marginBottom": 5
+      }
+    }>
+    <button
+      className="Button"
+      href={undefined}
+      onClick={[Function anonymous]}
+      style={
+        Object {
+          "backgroundColor": "#cc6677",
+          "border": 0,
+          "borderRadius": 2,
+          "boxSizing": "border-box",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "fontFamily": "inherit",
+          "fontSize": 14,
+          "fontWeight": 600,
+          "lineHeight": "16px",
+          "margin": 0,
+          "minHeight": 32,
+          "paddingBottom": 8,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 8,
+          "textDecoration": "none"
+        }
+      }>
+      Rocky Road
+    </button>
   </div>
   <div>
     NewOptionButton

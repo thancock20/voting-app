@@ -20,6 +20,7 @@ const PollScreen = ({poll}) => {
       />
       <PollButtons
         poll={poll}
+        colorScale={colorScale}
       />
     </div>
   );

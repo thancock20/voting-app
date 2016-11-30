@@ -10,7 +10,6 @@
 * PollScreen
   * PollChart
   * PollButtons
-    * PollButton
     * NewOptionButton
 * Footer
 
