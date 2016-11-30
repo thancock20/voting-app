@@ -6,9 +6,103 @@ exports[`default view`] = `
     }
   }>
   PollScreen
-  <div>
-    PollChart
-  </div>
+  <svg
+    aria-labelledby="title desc"
+    height={400}
+    role="img"
+    style={
+      Object {
+        "height": "auto",
+        "width": "100%"
+      }
+    }
+    viewBox="0 0 400 400"
+    width={400}>
+    <title
+      id="title">
+      Victory Chart
+    </title>
+    <desc
+      id="desc">
+      
+    </desc>
+    <g
+      role="presentation"
+      style={
+        Object {
+          "height": "auto",
+          "width": "100%"
+        }
+      }
+      transform="translate(200, 200)">
+      <path
+        d="M9.184850993605149e-15,-150L6.123233995736766e-15,-100Z"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "eventKey": 0,
+            "fill": "#252525",
+            "padding": 10,
+            "stroke": "transparent",
+            "strokeWidth": 1
+          }
+        } />
+      <path
+        d="M9.184850993605149e-15,-150L6.123233995736766e-15,-100Z"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "eventKey": 1,
+            "fill": "#525252",
+            "padding": 10,
+            "stroke": "transparent",
+            "strokeWidth": 1
+          }
+        } />
+      <path
+        d="M9.184850993605149e-15,-150L6.123233995736766e-15,-100Z"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "eventKey": 2,
+            "fill": "#737373",
+            "padding": 10,
+            "stroke": "transparent",
+            "strokeWidth": 1
+          }
+        } />
+      <path
+        d="M9.184850993605149e-15,-150L6.123233995736766e-15,-100Z"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "eventKey": 3,
+            "fill": "#969696",
+            "padding": 10,
+            "stroke": "transparent",
+            "strokeWidth": 1
+          }
+        } />
+      <path
+        d="M9.184850993605149e-15,-150L6.123233995736766e-15,-100Z"
+        role="presentation"
+        shapeRendering="auto"
+        style={
+          Object {
+            "eventKey": 4,
+            "fill": "#bdbdbd",
+            "padding": 10,
+            "stroke": "transparent",
+            "strokeWidth": 1
+          }
+        } />
+    </g>
+    <g />
+  </svg>
   <div>
     PollButtons
     <div>

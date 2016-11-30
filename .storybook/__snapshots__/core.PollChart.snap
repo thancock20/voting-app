@@ -1,5 +1,82 @@
 exports[`default view`] = `
-<div>
-  PollChart
-</div>
+<svg
+  aria-labelledby="title desc"
+  height={400}
+  role="img"
+  style={
+    Object {
+      "height": "auto",
+      "width": "100%"
+    }
+  }
+  viewBox="0 0 400 400"
+  width={400}>
+  <title
+    id="title">
+    Victory Chart
+  </title>
+  <desc
+    id="desc">
+    
+  </desc>
+  <g
+    role="presentation"
+    style={
+      Object {
+        "height": "auto",
+        "width": "100%"
+      }
+    }
+    transform="translate(200, 200)">
+    <path
+      d="M9.184850993605149e-15,-150A150,150,0,0,1,146.23918682727356,33.37814009344716L97.49279121818236,22.25209339563144A100,100,0,0,0,6.123233995736766e-15,-100Z"
+      role="presentation"
+      shapeRendering="auto"
+      style={
+        Object {
+          "eventKey": 0,
+          "fill": "4477aa",
+          "name": "Chocolate",
+          "padding": 10,
+          "stroke": "transparent",
+          "strokeWidth": 1,
+          "votes": 10,
+          "xName": "Chocolate"
+        }
+      } />
+    <path
+      d="M146.23918682727356,33.37814009344716A150,150,0,0,1,65.08256086763373,135.14533018536287L43.38837391175582,90.09688679024191A100,100,0,0,0,97.49279121818236,22.25209339563144Z"
+      role="presentation"
+      shapeRendering="auto"
+      style={
+        Object {
+          "eventKey": 1,
+          "fill": "ddcc77",
+          "name": "Vanilla",
+          "padding": 10,
+          "stroke": "transparent",
+          "strokeWidth": 1,
+          "votes": 5,
+          "xName": "Vanilla"
+        }
+      } />
+    <path
+      d="M65.08256086763373,135.14533018536287A150,150,0,1,1,-2.7554552980815446e-14,-150L-1.8369701987210297e-14,-100A100,100,0,1,0,43.38837391175582,90.09688679024191Z"
+      role="presentation"
+      shapeRendering="auto"
+      style={
+        Object {
+          "eventKey": 2,
+          "fill": "cc6677",
+          "name": "Rocky Road",
+          "padding": 10,
+          "stroke": "transparent",
+          "strokeWidth": 1,
+          "votes": 20,
+          "xName": "Rocky Road"
+        }
+      } />
+  </g>
+  <g />
+</svg>
 `;
