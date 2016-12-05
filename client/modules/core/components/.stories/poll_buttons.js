@@ -26,11 +26,13 @@ storiesOf('core.PollButtons', module)
         }
       ]
     });
+    const isLoggedIn = boolean('isLoggedIn', true);
     const colorScale = palette([ 'tol', 'tol-rainbow' ], poll.options.length);
     return (
       <PollButtons
         poll={poll}
         colorScale={colorScale}
+        isLoggedIn={isLoggedIn}
         vote={action('pollButtons-vote-clicked')}
       />
     );
