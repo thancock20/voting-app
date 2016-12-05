@@ -15,15 +15,18 @@ describe('core.containers.poll_buttons', () => {
 //      return Collections;
 //    };
 
-    it('should call onData with no data', () => {
-      const Meteor = {};
+    it('should pass data on to onData', () => {
+      const Meteor = {user: stub()};
+      Meteor.user.returns('Bob');
       const Collections = {};
 
       const context = () => ({Meteor, Collections});
       const onData = spy();
 
+      const isLoggedIn = true;
+
       composer({context}, onData);
-      expect(onData.args[0]).to.deep.equal([ null, {} ]);
+      expect(onData.args[0]).to.deep.equal([ null, {isLoggedIn} ]);
     });
   });
 

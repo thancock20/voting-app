@@ -4,8 +4,8 @@ import PollButtons from '../components/poll_buttons.jsx';
 
 export const composer = ({context}, onData) => {
   const {Meteor, Collections} = context();
-
-  onData(null, {});
+  const isLoggedIn = Boolean(Meteor.user());
+  onData(null, {isLoggedIn});
 };
 
 export const depsMapper = (context, actions) => ({

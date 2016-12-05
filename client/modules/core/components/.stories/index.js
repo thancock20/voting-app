@@ -7,6 +7,6 @@ import poll from './poll';
 import pollScreen from './poll_screen';
 import pollChart from './poll_chart';
 import pollButtons from './poll_buttons';
-import newOptionButton from './new_option_button';
+import newOption from './new_option';
 import mainLayout from './main_layout';
 import home from './home';

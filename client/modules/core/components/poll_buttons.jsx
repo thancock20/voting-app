@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
-import NewOptionButton from './new_option_button.jsx';
+import NewOption from './new_option.jsx';
 import { Button } from 'rebass';
 import { partial } from 'partial-application';
 
-const PollButtons = ({poll, colorScale, vote}) => (
+const PollButtons = ({poll, colorScale, vote, isLoggedIn}) => (
   <div>
     {
       poll.options.map((option, index) => (
@@ -18,7 +18,7 @@ const PollButtons = ({poll, colorScale, vote}) => (
         </div>
       ))
     }
-    <NewOptionButton />
+    { isLoggedIn && <NewOption /> }
   </div>
 );
 PollButtons.propTypes = {
