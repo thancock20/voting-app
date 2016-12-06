@@ -105,29 +105,6 @@ exports[`default view`] = `
       }>
       New Poll
     </a>
-    <a
-      className="NavItem"
-      href="/polls/1"
-      style={
-        Object {
-          "alignItems": "center",
-          "alignSelf": "stretch",
-          "boxSizing": "border-box",
-          "color": "inherit",
-          "cursor": "pointer",
-          "display": "flex",
-          "fontSize": 14,
-          "fontWeight": 600,
-          "lineHeight": "1rem",
-          "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
-          "paddingTop": 8,
-          "textDecoration": "none"
-        }
-      }>
-      First Poll
-    </a>
   </div>
 </div>
 `;

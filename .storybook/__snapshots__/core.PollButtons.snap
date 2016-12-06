@@ -145,6 +145,7 @@ exports[`default view`] = `
         "alignItems": "center",
         "boxSizing": "border-box",
         "display": "flex",
+        "margin": "auto",
         "width": "80%"
       }
     }>
