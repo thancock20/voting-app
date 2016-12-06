@@ -117,5 +117,8 @@ exports[`default view`] = `
        votes
     </button>
   </div>
+  <div>
+    NewOption
+  </div>
 </div>
 `;

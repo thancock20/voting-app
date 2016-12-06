@@ -4,7 +4,7 @@ import {mount} from 'react-mounter';
 import MainLayout from './components/main_layout.jsx';
 import Home from './components/home.jsx';
 import PollListScreen from './containers/poll_list_screen.js';
-import PollScreen from './components/poll_screen.jsx';
+import PollScreen from './containers/poll_screen.js';
 import NewPollForm from './components/new_poll_form.jsx';
 
 export default function (injectDeps, {FlowRouter}) {
@@ -39,9 +39,9 @@ export default function (injectDeps, {FlowRouter}) {
 
   FlowRouter.route('/polls/:id', {
     name: 'poll',
-    action() {
+    action(params) {
       mount(MainLayoutCtx, {
-        content: () => (<PollScreen />)
+        content: () => (<PollScreen pollId={params.id}/>)
       });
     }
   });
