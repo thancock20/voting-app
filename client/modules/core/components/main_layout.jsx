@@ -13,7 +13,7 @@ const Layout = ({content = () => null }) => (
       ]}
     />
     <Header />
-    <div>
+    <div style={{maxWidth: 800, margin: 'auto'}}>
       {content()}
     </div>
     <Footer />

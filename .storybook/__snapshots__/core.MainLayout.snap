@@ -3,7 +3,13 @@ exports[`default view`] = `
   <span>
     <UseDeps(Container(Header)) />
   </span>
-  <div />
+  <div
+    style={
+      Object {
+        "margin": "auto",
+        "maxWidth": 800
+      }
+    } />
   <footer
     className="Footer"
     style={

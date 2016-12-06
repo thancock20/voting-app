@@ -3,7 +3,6 @@ exports[`default view`] = `
   style={
     Object {
       "margin": "auto",
-      "maxWidth": 800,
       "paddingTop": 48
     }
   }>
