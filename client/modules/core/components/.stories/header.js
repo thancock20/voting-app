@@ -8,6 +8,6 @@ storiesOf('core.Header', module)
   .addDecorator(withKnobs)
   .add('default view', () => {
     return (
-      <Header />
+      <Header isLoggedIn={boolean('isLoggedIn', true)}/>
     );
   });

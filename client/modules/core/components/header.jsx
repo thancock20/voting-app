@@ -9,13 +9,13 @@ import {
   Toolbar
 } from 'rebass';
 
-const Header = () => (
+const Header = ({isLoggedIn}) => (
   <Fixed top left right zIndex={1}>
     <Toolbar>
       <NavItem href="/" children="Home" />
       <Space auto />
       <NavItem href="/polls" children="Polls" />
-      <NavItem href="/polls/new" children="New Poll" />
+      { isLoggedIn && <NavItem href="/polls/new" children="New Poll" /> }
     </Toolbar>
   </Fixed>
 );

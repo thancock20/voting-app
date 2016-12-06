@@ -2,6 +2,8 @@ exports[`default view`] = `
 <div
   style={
     Object {
+      "margin": "auto",
+      "maxWidth": 600,
       "paddingTop": 48,
       "textAlign": "center"
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Header from './header.jsx';
+import Header from '../containers/header.js';
 import Footer from './footer.jsx';
 
 const Layout = ({content = () => null }) => (
@@ -13,7 +13,7 @@ const Layout = ({content = () => null }) => (
       ]}
     />
     <Header />
-    <div style={{maxWidth: 600, margin: 'auto'}}>
+    <div>
       {content()}
     </div>
     <Footer />
