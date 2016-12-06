@@ -1,5 +1,8 @@
 export default {
   vote() {},
   addOption() {},
-  deletePoll() {}
+
+  deletePoll({Meteor}, pollId) {
+    Meteor.call('polls.delete', pollId);
+  }
 };
