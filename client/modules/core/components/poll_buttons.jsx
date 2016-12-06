@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import NewOption from './new_option.jsx';
+import NewOption from '../containers/new_option.js';
 import { Button } from 'rebass';
 import { partial } from 'partial-application';
 

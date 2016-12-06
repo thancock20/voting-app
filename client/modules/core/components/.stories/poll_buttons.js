@@ -2,8 +2,18 @@ import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 import { withKnobs, text, boolean, number, object } from '@kadira/storybook-addon-knobs';
 import { setComposerStub } from 'react-komposer';
+import NewOption from '../../containers/new_option';
 import PollButtons from '../poll_buttons.jsx';
 import palette from '../../libs/palette';
+
+setComposerStub(NewOption, (props) => {
+  const data = {
+    ...props,
+    addOption: action('addOption')
+  };
+
+  return data;
+});
 
 storiesOf('core.PollButtons', module)
   .addDecorator(withKnobs)
