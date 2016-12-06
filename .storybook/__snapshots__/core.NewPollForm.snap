@@ -1,0 +1,10 @@
+exports[`default view`] = `
+<div
+  style={
+    Object {
+      "paddingTop": 48
+    }
+  }>
+  NewPollForm
+</div>
+`;

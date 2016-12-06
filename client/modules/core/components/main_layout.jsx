@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Header from './header.jsx';
+import Footer from './footer.jsx';
 
 const Layout = ({content = () => null }) => (
   <div>
@@ -10,9 +12,11 @@ const Layout = ({content = () => null }) => (
         {name: 'viewport', content: 'width=device-width, initial-scale=1'}
       ]}
     />
+    <Header />
     <div>
       {content()}
     </div>
+    <Footer />
   </div>
 );
 

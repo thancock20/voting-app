@@ -1,0 +1,33 @@
+exports[`default view`] = `
+<div>
+  <h1
+    style={
+      Object {
+        "paddingTop": 48
+      }
+    }>
+    Shingon
+  </h1>
+  <p>
+    Welcome to Shingon.
+  </p>
+  <ul>
+    <li>
+      Read 
+      <a
+        href="https://kadirahq.github.io/mantra/"
+        target="_blank">
+        the mantra spec
+      </a>
+    </li>
+    <li>
+      Learn 
+      <a
+        href="https://github.com/thancock20/shingon#commands"
+        target="_blank">
+        CLI
+      </a>
+    </li>
+  </ul>
+</div>
+`;
