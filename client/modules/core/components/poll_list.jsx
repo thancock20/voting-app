@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Poll from '../containers/poll.js';
 
 const PollList = ({polls}) => (
-  <ul>
+  <ul style={{paddingLeft: 0}}>
     {polls.map((poll) => {
       return (
         <Poll
