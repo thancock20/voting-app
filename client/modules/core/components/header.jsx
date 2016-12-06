@@ -16,7 +16,6 @@ const Header = () => (
       <Space auto />
       <NavItem href="/polls" children="Polls" />
       <NavItem href="/polls/new" children="New Poll" />
-      <NavItem href="/polls/1" children="First Poll" />
     </Toolbar>
   </Fixed>
 );

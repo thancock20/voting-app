@@ -5,6 +5,7 @@ import palette from '../libs/palette';
 import { Heading } from 'rebass';
 
 const PollScreen = ({poll}) => {
+  if (!poll) return <div>loading...</div>
   const colorScale = palette([ 'tol', 'tol-rainbow' ], poll.options.length);
   return (
     <div style={{paddingTop: 48, textAlign: 'center'}}>

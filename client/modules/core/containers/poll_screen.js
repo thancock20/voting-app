@@ -5,7 +5,7 @@ import PollScreen from '../components/poll_screen.jsx';
 export const composer = ({context, pollId}, onData) => {
   const {Meteor, Collections} = context();
   Meteor.subscribe('polls');
-  const poll = Collections.Polls.find({_id: pollId}, { } ).fetch();
+  const poll = Collections.Polls.findOne({_id: pollId});
   onData(null, {poll});
 };
 

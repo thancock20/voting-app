@@ -32,7 +32,7 @@ class NewOption extends React.Component {
   render() {
     return (
       <InlineForm
-        style={{width: '80%'}}
+        style={{width: '80%', margin: 'auto'}}
         buttonLabel="Add"
         placeholder="Add Option"
         label="NewOption"
