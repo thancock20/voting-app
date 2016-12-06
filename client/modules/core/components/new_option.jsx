@@ -1,10 +1,51 @@
 import React, { PropTypes } from 'react';
+import { InlineForm } from 'rebass';
 
-const NewOption = () => (
-  <div>
-    NewOption
-  </div>
-);
-NewOption.propTypes = {};
+class NewOption extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+
+    this.state = {
+      optionInput: ''
+    };
+  }
+
+  handleClick(event) {
+    if (event && event.preventDefault) {
+      event.preventDefault();
+    }
+    this.props.addOption(this.props.pollId, this.state.optionInput);
+    this.setState({
+      optionInput: ''
+    });
+  }
+
+  handleChange(event) {
+    this.setState({
+      optionInput: event.target.value
+    });
+  }
+
+  render() {
+    return (
+      <InlineForm
+        style={{width: '80%'}}
+        buttonLabel="Add"
+        placeholder="Add Option"
+        label="NewOption"
+        name="new_option"
+        onChange={this.handleChange}
+        onClick={this.handleClick}
+      />
+    );
+  }
+}
+NewOption.propTypes = {
+  addOption: PropTypes.func,
+  pollId: PropTypes.string
+};
 
 export default NewOption;

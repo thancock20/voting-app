@@ -134,10 +134,17 @@ exports[`default view`] = `
             "width": "80%"
           }
         }>
-        Chocolate
-        : 
-        10
-         votes
+        <span
+          style={
+            Object {
+              "fontWeight": "bold"
+            }
+          }>
+          Chocolate
+          : 
+          10
+           votes
+        </span>
       </button>
     </div>
     <div
@@ -173,10 +180,17 @@ exports[`default view`] = `
             "width": "80%"
           }
         }>
-        Vanilla
-        : 
-        5
-         votes
+        <span
+          style={
+            Object {
+              "fontWeight": "bold"
+            }
+          }>
+          Vanilla
+          : 
+          5
+           votes
+        </span>
       </button>
     </div>
     <div
@@ -212,10 +226,17 @@ exports[`default view`] = `
             "width": "80%"
           }
         }>
-        Rocky Road
-        : 
-        20
-         votes
+        <span
+          style={
+            Object {
+              "fontWeight": "bold"
+            }
+          }>
+          Rocky Road
+          : 
+          20
+           votes
+        </span>
       </button>
     </div>
   </div>

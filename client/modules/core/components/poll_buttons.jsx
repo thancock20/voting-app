@@ -13,12 +13,12 @@ const PollButtons = ({poll, colorScale, vote, isLoggedIn}) => (
             backgroundColor={`#${colorScale[index]}`}
             onClick={partial(vote, poll._id, option.name)}
           >
-            {option.name}: {option.votes} votes
+            <span style={{fontWeight: 'bold'}}>{option.name}: {option.votes} votes</span>
           </Button>
         </div>
       ))
     }
-    { isLoggedIn && <NewOption /> }
+    { isLoggedIn && <NewOption pollId={poll._id} /> }
   </div>
 );
 PollButtons.propTypes = {

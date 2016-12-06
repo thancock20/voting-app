@@ -8,6 +8,6 @@ storiesOf('core.NewOption', module)
   .addDecorator(withKnobs)
   .add('default view', () => {
     return (
-      <NewOption />
+      <NewOption addOption={action('submitted')} pollId={text('pollId', 'abc123')} />
     );
   });
