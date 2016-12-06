@@ -10,7 +10,7 @@ const PollButtons = ({poll, colorScale, vote, isLoggedIn}) => (
         <div key={index} style={{marginBottom: 5}}>
           <Button
             style={{width: '80%'}}
-            backgroundColor={`#${colorScale[index]}`}
+            backgroundColor={`${colorScale[index]}`}
             onClick={partial(vote, poll._id, option.name)}
           >
             <span style={{fontWeight: 'bold'}}>{option.name}: {option.votes} votes</span>
