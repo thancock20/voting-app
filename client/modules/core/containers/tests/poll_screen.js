@@ -19,9 +19,9 @@ describe('core.containers.poll_screen', () => {
       const Meteor = {subscribe: stub()};
       Meteor.subscribe.returns({ready: () => false});
 
-      const polls = [ {_id: 'abc123'} ];
-      const Collections = {Polls: {find: stub()}};
-      Collections.Polls.find.returns({fetch: () => polls});
+      const poll = [ {_id: 'abc123'} ];
+      const Collections = {Polls: {findOne: stub()}};
+      Collections.Polls.findOne.returns(poll);
 
       const context = () => ({Meteor, Collections});
       const onData = spy();
@@ -38,8 +38,8 @@ describe('core.containers.poll_screen', () => {
       Meteor.subscribe.returns({ready: () => false});
 
       const poll = [ {_id: 'abc123'} ];
-      const Collections = {Polls: {find: stub()}};
-      Collections.Polls.find.returns({fetch: () => poll});
+      const Collections = {Polls: {findOne: stub()}};
+      Collections.Polls.findOne.returns(poll);
 
       const context = () => ({Meteor, Collections});
       const onData = spy();
