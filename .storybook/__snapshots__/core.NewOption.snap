@@ -62,7 +62,7 @@ exports[`default view`] = `
         }
       }
       type="text"
-      value={undefined} />
+      value="" />
   </div>
   <button
     className="ButtonOutline"
@@ -93,7 +93,7 @@ exports[`default view`] = `
       }
     }
     type="submit">
-    Add
+    +
   </button>
 </form>
 `;

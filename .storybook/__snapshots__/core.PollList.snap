@@ -1,5 +1,10 @@
 exports[`default view`] = `
-<ul>
+<ul
+  style={
+    Object {
+      "paddingLeft": 0
+    }
+  }>
   <li
     className="list-1815189512">
     <a

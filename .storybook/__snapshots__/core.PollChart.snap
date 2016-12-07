@@ -35,7 +35,7 @@ exports[`default view`] = `
       style={
         Object {
           "eventKey": 0,
-          "fill": "4477aa",
+          "fill": "#4477aa",
           "name": "Chocolate",
           "padding": 10,
           "stroke": "transparent",
@@ -51,7 +51,7 @@ exports[`default view`] = `
       style={
         Object {
           "eventKey": 1,
-          "fill": "ddcc77",
+          "fill": "#ddcc77",
           "name": "Vanilla",
           "padding": 10,
           "stroke": "transparent",
@@ -67,7 +67,7 @@ exports[`default view`] = `
       style={
         Object {
           "eventKey": 2,
-          "fill": "cc6677",
+          "fill": "#cc6677",
           "name": "Rocky Road",
           "padding": 10,
           "stroke": "transparent",
