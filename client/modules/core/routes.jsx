@@ -5,7 +5,7 @@ import MainLayout from './components/main_layout.jsx';
 import Home from './components/home.jsx';
 import PollListScreen from './components/poll_list_screen.jsx';
 import PollScreen from './containers/poll_screen.js';
-import NewPollForm from './components/new_poll_form.jsx';
+import NewPollForm from './containers/new_poll_form.js';
 
 export default function (injectDeps, {FlowRouter}) {
   const MainLayoutCtx = injectDeps(MainLayout);
