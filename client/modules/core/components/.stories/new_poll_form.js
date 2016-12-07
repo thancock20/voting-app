@@ -8,6 +8,6 @@ storiesOf('core.NewPollForm', module)
   .addDecorator(withKnobs)
   .add('default view', () => {
     return (
-      <NewPollForm />
+      <NewPollForm createPoll={action('createPoll')}/>
     );
   });
