@@ -17,10 +17,12 @@ class NewOption extends React.Component {
     if (event && event.preventDefault) {
       event.preventDefault();
     }
-    this.props.addOption(this.props.pollId, this.state.optionInput);
-    this.setState({
-      optionInput: ''
-    });
+    if (this.state.optionInput) {
+      this.props.addOption(this.props.pollId, this.state.optionInput);
+      this.setState({
+        optionInput: ''
+      });
+    }
   }
 
   handleChange(event) {
@@ -33,10 +35,11 @@ class NewOption extends React.Component {
     return (
       <InlineForm
         style={{width: '80%', margin: 'auto'}}
-        buttonLabel="Add"
+        buttonLabel="+"
         placeholder="Add Option"
         label="NewOption"
         name="new_option"
+        value={this.state.optionInput}
         onChange={this.handleChange}
         onClick={this.handleClick}
       />

@@ -14,11 +14,12 @@ describe('core.components.new_option', () => {
     const pollId = 'abc123';
     const el = shallow(<NewOption pollId={pollId} addOption={addOption} />);
 
+    el.find('InlineForm').first().simulate('change', {target: {value: 'Neapolitan'}});
     el.find('InlineForm').first().simulate('click');
     const args = addOption.args[0];
 
     expect(args.slice(0,2)).to.deep.equal([
-      'abc123', ''
+      'abc123', 'Neapolitan'
     ]);
   });
 });
