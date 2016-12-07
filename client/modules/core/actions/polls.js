@@ -12,7 +12,14 @@ export default {
     Meteor.call('polls.edit', pollId, {options});
   },
 
-  addOption() {},
+  addOption({Meteor, Collections}, pollId, optionInput) {
+    Meteor.subscribe('polls');
+    const poll = Collections.Polls.findOne({_id: pollId});
+    const options = poll.options;
+    options.push({name: optionInput, votes: 1});
+
+    Meteor.call('polls.edit', pollId, {options});
+  },
 
   deletePoll({Meteor}, pollId) {
     Meteor.call('polls.delete', pollId);

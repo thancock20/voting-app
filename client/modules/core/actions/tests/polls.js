@@ -54,6 +54,60 @@ describe('core.actions.polls', () => {
     });
   });
 
+  describe('addOption', () => {
+    it('should call Meteor.call to add an option to the poll', () => {
+      const Meteor = {call: spy(), subscribe: stub()};
+      Meteor.subscribe.returns({ready: () => false});
+
+      const poll = {
+        _id: 'abc123',
+        question: 'Ice Cream Flavor',
+        options: [
+          {
+            name: 'Chocolate',
+            votes: 0
+          },
+          {
+            name: 'Vanilla',
+            votes: 0
+          },
+          {
+            name: 'Rocky Road',
+            votes: 0
+          }
+        ]
+      };
+      const Collections = {Polls: {findOne: stub()}};
+      Collections.Polls.findOne.returns(poll);
+
+      actions.addOption({Meteor, Collections}, 'abc123', 'Neapolitan');
+      const args = Meteor.call.args[0];
+
+      expect(args.slice(0, 3)).to.deep.equal([
+        'polls.edit',
+        'abc123',
+        {options: [
+          {
+            name: 'Chocolate',
+            votes: 0
+          },
+          {
+            name: 'Vanilla',
+            votes: 0
+          },
+          {
+            name: 'Rocky Road',
+            votes: 0
+          },
+          {
+            name: 'Neapolitan',
+            votes: 1
+          }
+        ]}
+      ]);
+    });
+  });
+
   describe('deletePoll', () => {
     it('should call Meteor.call to delete the poll', () => {
       const Meteor = {call: spy()};
