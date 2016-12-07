@@ -4,6 +4,34 @@ import {spy, stub} from 'sinon';
 import actions from '../polls';
 
 describe('core.actions.polls', () => {
+  describe('createPoll', () => {
+    it('should call Meteor.call to create a poll', () => {
+      const Meteor = {call: spy()};
+      const question = 'Ice Cream Flavor';
+      const options = [ 'Chocolate', 'Vanilla', 'Rocky Road' ];
+
+      actions.createPoll({Meteor}, question, options);
+      const args = Meteor.call.args[0];
+
+      expect(args.slice(0,2)).to.deep.equal([
+        'polls.create',
+        {
+          question: 'Ice Cream Flavor',
+          options: [
+            {
+              name: 'Chocolate'
+            },
+            {
+              name: 'Vanilla'
+            },
+            {
+              name: 'Rocky Road'
+            }
+          ]
+        }
+      ]);
+    });
+  });
   describe('vote', () => {
     it('should call Meteor.call to add a vote to the option', () => {
       const Meteor = {call: spy(), subscribe: stub()};

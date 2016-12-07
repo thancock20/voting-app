@@ -1,4 +1,14 @@
 export default {
+  createPoll({Meteor, FlowRouter}, question, pollOptions) {
+    const options = pollOptions.map((option) => {
+      return {name: option};
+    });
+
+    Meteor.call('polls.create', {question, options}, (error, id) => {
+      FlowRouter.go(`/polls/${id}`);
+    });
+  },
+
   vote({Meteor, Collections}, pollId, optionName) {
     Meteor.subscribe('polls');
     const poll = Collections.Polls.findOne({_id: pollId});
