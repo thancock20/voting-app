@@ -1,0 +1,9 @@
+exports[`default view`] = `
+<div>
+  <div>
+    <u>
+      Sign in ▾
+    </u>
+  </div>
+</div>
+`;
