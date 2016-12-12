@@ -22,4 +22,6 @@ kadira:flow-router
 jagi:astronomy@2.0.0
 reywood:publish-composite
 anti:gagarin@=0.4.12
-accounts-password
+accounts-twitter
+accounts-ui-unstyled
+accounts-github
