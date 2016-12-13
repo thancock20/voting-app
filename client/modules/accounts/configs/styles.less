@@ -49,7 +49,7 @@
 //////////////////// LOGIN BUTTONS
 
 @login-buttons-accounts-dialog-width: 250px;
-@login-buttons-color: #315481;
+@login-buttons-color: #0088EE;
 @login-buttons-color-border: darken(@login-buttons-color, 10%);
 @login-buttons-color-active: lighten(@login-buttons-color, 10%);
 @login-buttons-color-active-border: darken(@login-buttons-color-active, 10%);
@@ -221,7 +221,14 @@
 
 #login-buttons a, .accounts-dialog a {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    padding: 8px;
 }
 
 #login-buttons.login-buttons-dropdown-align-right .login-close-text {
@@ -325,8 +332,8 @@
   // negative margins on the dropdown.
   // XXX We could use negative margins to compensate for the
   // border too.
-  top: -@meteor-accounts-dialog-border-width;
-  left: -@meteor-accounts-dialog-border-width;
+  // top: -@meteor-accounts-dialog-border-width;
+  right: -@meteor-accounts-dialog-border-width + 10px;
 }
 
 #login-buttons.login-buttons-dropdown-align-right #login-dropdown-list {
