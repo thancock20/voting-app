@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import {Heading, Input, Textarea, Button} from 'rebass';
+import Helmet from 'react-helmet';
 
 class NewPollForm extends React.Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class NewPollForm extends React.Component {
   render() {
     return (
       <div style={{paddingTop: 48, margin: 'auto', maxWidth: 800}}>
+        <Helmet title="New Form" />
         <Heading level={1} style={{textAlign: 'center', marginBottom: 20}}>New Poll</Heading>
         <form
           style={{width: '80%', margin: 'auto'}}

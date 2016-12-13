@@ -3,12 +3,14 @@ import PollChart from './poll_chart.jsx';
 import PollButtons from '../containers/poll_buttons.js';
 import palette from '../libs/palette';
 import { Heading } from 'rebass';
+import Helmet from 'react-helmet';
 
 const PollScreen = ({poll}) => {
-  if (!poll) return <div>loading...</div>
+  if (!poll) { return <div>loading...</div>; }
   const colorScale = palette([ 'tol', 'tol-rainbow' ], poll.options.length);
   return (
     <div style={{paddingTop: 48, textAlign: 'center', maxWidth: 600, margin: 'auto'}}>
+      <Helmet title={poll.question} />
       <Heading
         level={1}
       >
