@@ -1,9 +1,21 @@
 exports[`default view`] = `
 <li
-  className="list-1815189512">
+  style={
+    Object {
+      "borderBottom": "#eee solid 1px",
+      "listStyle": "none",
+      "padding": 15,
+      "position": "relative"
+    }
+  }>
   <a
-    className="link-2486703753"
-    href="/polls/abc123">
+    href="/polls/abc123"
+    style={
+      Object {
+        "color": "#7700ff",
+        "textDecoration": "none"
+      }
+    }>
     Ice Cream Flavors
   </a>
   <button
@@ -54,10 +66,22 @@ exports[`default view`] = `
 
 exports[`non-owner`] = `
 <li
-  className="list-1815189512">
+  style={
+    Object {
+      "borderBottom": "#eee solid 1px",
+      "listStyle": "none",
+      "padding": 15,
+      "position": "relative"
+    }
+  }>
   <a
-    className="link-2486703753"
-    href="/polls/abc123">
+    href="/polls/abc123"
+    style={
+      Object {
+        "color": "#7700ff",
+        "textDecoration": "none"
+      }
+    }>
     Ice Cream Flavors
   </a>
 </li>

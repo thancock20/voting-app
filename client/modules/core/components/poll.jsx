@@ -1,15 +1,19 @@
 import React, { PropTypes } from 'react';
 import { ButtonCircle } from 'rebass';
 import { partial } from 'partial-application';
-import Load from 'shingon-load-jss';
 
 const Poll = ({poll, deletePoll}) => (
   <li
-    className={classes.list}
+    style={{
+      position: 'relative',
+      listStyle: 'none',
+      padding: 15,
+      borderBottom: '#eee solid 1px'
+    }}
   >
     <a
       href={`/polls/${poll._id}`}
-      className={classes.link}
+      style={{textDecoration: 'none', color: '#7700ff'}}
     >{poll.question}</a>
     { poll.isOwner() && (
       <ButtonCircle
@@ -27,20 +31,5 @@ Poll.propTypes = {
   poll: PropTypes.object,
   deletePoll: PropTypes.func
 };
-
-const styles = {
-  list: {
-    position: 'relative',
-    listStyle: 'none',
-    padding: 15,
-    borderBottom: '#eee solid 1px'
-  },
-  link: {
-    textDecoration: 'none',
-    color: '#7700ff',
-  },
-};
-
-const classes = Load(styles);
 
 export default Poll;

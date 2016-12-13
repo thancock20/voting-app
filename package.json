@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "mantra-core": "^1.2.0",
-    "normalize.jss": "^1.0.2",
+    "normalize.css": "^5.0.0",
     "partial-application": "0.0.17",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
@@ -25,7 +25,6 @@
     "react-mounter": "^1.0.0",
     "react-simple-di": "^1.0.1",
     "rebass": "^0.3.3",
-    "shingon-load-jss": "^2.0.0",
     "victory": "^0.13.7"
   },
   "devDependencies": {
