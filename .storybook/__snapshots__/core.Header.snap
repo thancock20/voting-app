@@ -105,6 +105,9 @@ exports[`default view`] = `
       }>
       New Poll
     </a>
+    <span>
+      <UseDeps(Container(LogInButtons)) />
+    </span>
   </div>
 </div>
 `;
