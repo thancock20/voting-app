@@ -2,6 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Header from '../containers/header.js';
 import Footer from './footer.jsx';
+import Normalize from 'normalize.jss';
+import Load from 'shingon-load-jss';
+
+Load(Normalize, 'global');
 
 const Layout = ({content = () => null }) => (
   <div>
