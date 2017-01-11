@@ -18,7 +18,6 @@ es5-shim@4.6.15                # ECMAScript 5 compatibility for older browsers.
 ecmascript@0.5.9              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.2.1            # Server-side component of the `meteor shell` command
 
-kadira:flow-router
 jagi:astronomy@2.0.0
 reywood:publish-composite
 anti:gagarin@=0.4.12

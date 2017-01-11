@@ -7,7 +7,7 @@ import Load from 'shingon-load-jss';
 
 Load(Normalize, 'global');
 
-const Layout = ({content = () => null }) => (
+const Layout = ({children}) => (
   <div>
     <Helmet
       defaultTitle="voting-app"
@@ -18,7 +18,7 @@ const Layout = ({content = () => null }) => (
     />
     <Header />
     <div style={{maxWidth: 800, margin: 'auto'}}>
-      {content()}
+      {children}
     </div>
     <Footer />
   </div>
