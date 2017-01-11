@@ -1,5 +1,4 @@
 import React from 'react';
-import {mount} from 'react-mounter';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
