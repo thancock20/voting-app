@@ -1,11 +1,13 @@
+import { browserHistory } from 'react-router';
+
 export default {
-  createPoll({Meteor, FlowRouter}, question, pollOptions) {
+  createPoll({Meteor}, question, pollOptions) {
     const options = pollOptions.map((option) => {
       return {name: option};
     });
 
     Meteor.call('polls.create', {question, options}, (error, id) => {
-      FlowRouter.go(`/polls/${id}`);
+      browserHistory.push(`/polls/${id}`);
     });
   },
 
