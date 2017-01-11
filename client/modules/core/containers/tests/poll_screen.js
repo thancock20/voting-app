@@ -24,9 +24,10 @@ describe('core.containers.poll_screen', () => {
       Collections.Polls.findOne.returns(poll);
 
       const context = () => ({Meteor, Collections});
+      const params = {pollId: 'abc123'};
       const onData = spy();
 
-      composer({context}, onData);
+      composer({context, params}, onData);
       const args = Meteor.subscribe.args[0];
       expect(args.slice(0, 1)).to.deep.equal([
         'polls'
@@ -42,9 +43,10 @@ describe('core.containers.poll_screen', () => {
       Collections.Polls.findOne.returns(poll);
 
       const context = () => ({Meteor, Collections});
+      const params = {pollId: 'abc123'};
       const onData = spy();
 
-      composer({context}, onData);
+      composer({context, params}, onData);
       const args = onData.args[0];
       expect(args).to.deep.equal([
         null, {poll}
