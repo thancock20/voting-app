@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 import LogInButtons from '/client/modules/accounts/containers/log_in_buttons.js';
 import {
   Arrow,
@@ -13,10 +14,10 @@ import {
 const Header = ({isLoggedIn}) => (
   <Fixed top left right zIndex={1}>
     <Toolbar>
-      <NavItem href="/" children="Home" />
+      <NavItem to="/" is={Link} children="Home" />
       <Space auto />
-      <NavItem href="/polls" children="Polls" />
-      { isLoggedIn && <NavItem href="/polls/new" children="New Poll" /> }
+      <NavItem to="/polls" is={Link} children="Polls" />
+      { isLoggedIn && <NavItem to="/polls/new" is={Link} children="New Poll" /> }
       <LogInButtons />
     </Toolbar>
   </Fixed>
